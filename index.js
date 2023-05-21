@@ -15,7 +15,13 @@ colorScheme.addEventListener('click', () => {
     .then(data => {
         const colors = data.colors
         colorSchemes = colors.map(color => color.hex.value)
-        console.log(colorSchemes)
+
+        let colorDivs = document.getElementsByClassName('color-scheme')
+
+        for(let i = 0; i < colorDivs.length; i++) {
+            console.log(colorDivs.length)
+            colorDivs[i].style.backgroundColor = colorSchemes[i]
+        }
     })
 })
 
