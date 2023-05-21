@@ -7,4 +7,12 @@ const urlEndpoint = '/scheme'
 const queryString = `?hex=${colorWheel.value.substring(1)}&format=json&mode=${dropDownMenu.value}&count=5`
 const completeUrl = baseUrl+urlEndpoint+queryString
 
-console.log(completeUrl)
+let colorSchemes = new Array(5).fill(0)
+
+fetch(completeUrl)
+.then(res => res.json())
+.then(data => {
+    const colors = data.colors
+    colorSchemes = colors.map(color => color.hex.value)
+})
+
