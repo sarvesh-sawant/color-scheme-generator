@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -34,14 +35,26 @@ body {
 
 .color-wheel-style {
     grid-area: color-picker;
+    width: 60%;
+    height: 3em;
 }
 
 .drop-down-menu-style {
     grid-area: drop-down;
+    height: 3em;
+    width: 90%;
+    border-radius: 0.37em;
+    background-color: #1F2937;;
 }
 
 .btn-style {
     grid-area: get-scheme-btn;
+    background-color: #3D4B60;
+    width: 90%;
+    height: 3em;
+    border: none;
+    border-radius: 0.25em;
+    font-family: 'Roboto', sans-serif;
 }
 
 .color-hex1{
@@ -79,4 +92,15 @@ body {
 .color-wheel-style {
     align-self: center;
     justify-self: center;
+}
+
+.color-hex,
+.drop-down-menu-style,
+.btn-style {
+    color: #D5D4D8;
+}
+
+.color-hex, .btn-style{
+    font-size: 0.75rem;
+    font-weight: bold;
 }
