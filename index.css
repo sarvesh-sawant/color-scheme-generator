@@ -13,7 +13,7 @@ body {
     grid-template: 20vh 70vh 10vh / 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "color-picker drop-down drop-down drop-down get-scheme-btn"
                             "color1 color2 color3 color4 color5"
-                            "footer1 footer2 footer3 footer4 footer5"
+                            "hex-footer1 hex-footer2 hex-footer3 hex-footer4 hex-footer5"
 }
 
 .color-scheme1 {
@@ -51,6 +51,36 @@ body {
 
 .btn-style {
     grid-area: get-scheme-btn;
+    align-self: center;
+    justify-self: center;
+}
+
+.color-hex1{
+    grid-area: hex-footer1;
+    align-self: center;
+    justify-self: center;
+}
+
+.color-hex2{
+    grid-area: hex-footer2;
+    align-self: center;
+    justify-self: center;
+}
+
+.color-hex3{
+    grid-area: hex-footer3;
+    align-self: center;
+    justify-self: center;
+}
+
+.color-hex4{
+    grid-area: hex-footer4;
+    align-self: center;
+    justify-self: center;
+}
+
+.color-hex5{
+    grid-area: hex-footer5;
     align-self: center;
     justify-self: center;
 }

@@ -1,4 +1,4 @@
-import { createApiUrl } from './utils.js'
+import { createApiUrl, renderColorSchemes } from './utils.js'
 
 const colorWheel = document.getElementById('color-wheel')
 const dropDownMenu = document.getElementById('drop-down-menu')
@@ -15,13 +15,7 @@ colorScheme.addEventListener('click', () => {
     .then(data => {
         const colors = data.colors
         colorSchemes = colors.map(color => color.hex.value)
-
-        let colorDivs = document.getElementsByClassName('color-scheme')
-
-        for(let i = 0; i < colorDivs.length; i++) {
-            console.log(colorDivs.length)
-            colorDivs[i].style.backgroundColor = colorSchemes[i]
-        }
+        renderColorSchemes(colorSchemes)
     })
 })
 
