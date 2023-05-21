@@ -11,7 +11,7 @@ body {
 
 .main-container {
     display: grid;
-    grid-template: 15vh 85vh 10vh / 1fr 1fr 1fr 1fr 1fr;
+    grid-template: 15vh 78vh 7vh / 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "color-picker drop-down drop-down drop-down get-scheme-btn"
                             "color1 color2 color3 color4 color5"
                             "hex-footer1 hex-footer2 hex-footer3 hex-footer4 hex-footer5"
