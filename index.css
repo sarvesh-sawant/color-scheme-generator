@@ -36,3 +36,21 @@ body {
     grid-area: color5;
     background-color: yellow;
 }
+
+.color-wheel-style {
+    grid-area: color-picker;
+    align-self: center;
+    justify-self: center;
+}
+
+.drop-down-menu-style {
+    grid-area: drop-down;
+    align-self: center;
+    justify-self: center;
+}
+
+.btn-style {
+    grid-area: get-scheme-btn;
+    align-self: center;
+    justify-self: center;
+}
