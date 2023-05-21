@@ -8,18 +8,25 @@
     <title>Color Scheme Generator</title>
 </head>
 <body>
+    <div class="main-container">
+        <input type="color" id="color-wheel" class="color-wheel-style">
+        <select name="color-schemes" id="drop-down-menu" class="drop-down-menu-style">
+            <option value="monochrome">monochrome</option>
+            <option value="monochrome-dark">monochrome-dark</option>
+            <option value="monochrome-light">monochrome-light</option>
+            <option value="analogic">analogic</option> 
+            <option value="complement">complement</option> 
+            <option value="analogic-complement">analogic-complement</option> 
+            <option value="triad">triad</option> 
+            <option value="quad">quad</option>
+        </select>
+        <button class="btn-style" id="get-color-scheme">Get color scheme</button>
+        <div class="color-scheme1"></div>
+        <div class="color-scheme2"></div>
+        <div class="color-scheme3"></div>
+        <div class="color-scheme4"></div>
+        <div class="color-scheme5"></div>
+    </div>
     <script src="index.js" type="module"></script>
-    <input type="color" id="color-wheel" class="color-wheel-style">
-    <select name="color-schemes" id="drop-down-menu" class="drop-down-menu-style">
-        <option value="monochrome">monochrome</option>
-        <option value="monochrome-dark">monochrome-dark</option>
-        <option value="monochrome-light">monochrome-light</option>
-        <option value="analogic">analogic</option> 
-        <option value="complement">complement</option> 
-        <option value="analogic-complement">analogic-complement</option> 
-        <option value="triad">triad</option> 
-        <option value="quad">quad</option>
-    </select>
-    <button class="btn-style" id="get-color-scheme">Get color scheme</button>
 </body>
 </html>
